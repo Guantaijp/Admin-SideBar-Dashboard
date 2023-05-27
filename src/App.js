@@ -1,21 +1,17 @@
 import React from 'react';
-import NavHeader from './components/NavHeader';
-import PageContent from './components/PageContent';
 import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
-
+import PageContent from './components/PageContent';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <NavHeader />
-      <div className="SideMenuAndPageContent">
-
+    <div className="app">
+      <div className="fixed-sidebar">
         <Sidebar />
+      </div>
+      <div className="scrollable-content">
         <PageContent />
-        </div>
-        <Footer />
-
+      </div>
     </div>
   );
 }

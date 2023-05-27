@@ -1,38 +1,22 @@
-.App{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+/* App.css */
+.app {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Sidebar width and remaining space */
+  grid-template-rows: 100vh; /* Full height of the screen */
 }
-.AppHeader{
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 20px 4px 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-.AppFooter{
-height: 50px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-border-top: 1px solid rgba(0, 0, 0, 0.15);
 
+.fixed-sidebar {
+  background-color: #fff;
+  overflow-y: auto;
 }
-.SideMenuAndPageContent{
-  display: flex;
-  flex: 1;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: rgba(0, 0, 0, 0.05) ;
+
+.scrollable-content {
+  background-color: #f5f5f5;
+  overflow-y: auto;
 }
 .SideMenu{
   height: 100%;
 }
 .SideMenuVertical{
   height: 100%;
-}
-.PageContent{
-  padding-left: 12px;
 }
