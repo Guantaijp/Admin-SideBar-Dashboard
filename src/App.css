@@ -1,8 +1,8 @@
 /* App.css */
 .app {
   display: grid;
-  grid-template-columns: 300px 1fr; /* Sidebar width and remaining space */
-  grid-template-rows: 100vh; /* Full height of the screen */
+  grid-template-columns: 300px calc(100% - 300px);
+  grid-template-rows: 100vh;
 }
 
 .fixed-sidebar {

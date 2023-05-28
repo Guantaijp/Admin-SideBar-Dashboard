@@ -25,9 +25,7 @@ const Sidebar = () => {
         <div className="sidebar-content">
 
       <div className="">
-        <Menu
-          className="SideMenuVertical"
-          mode="vertical"
+        <Menu className="SideMenuVertical" mode="vertical"
           onClick={(item) => {
             //item.key
             navigate(item.key);
