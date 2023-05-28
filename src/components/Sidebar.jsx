@@ -4,20 +4,12 @@ import {
   ShoppingCartOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Menu } from "antd";
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 import '../App.css';
 import Profile from "../images/images.jpeg";
 import { Link } from "react-router-dom";
 
 
-
-
 const Sidebar = () => {
-
-
-
   return (
     <div className="bg-slate-900">
       <div style={{ height: '100vh', display: 'flex' }}>
